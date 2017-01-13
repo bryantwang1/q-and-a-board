@@ -1,1 +1,18 @@
-{{yield}}
+{{#if addNewQuestion}}
+  <h1>New Question</h1>
+  <div class="form-div">
+    <form>
+      <div class="form-group">
+        <label for="user">Username: </label>
+        {{input value=user id="user"}}
+      </div>
+      <div class="form-group">
+        <label for="question">Question: </label>
+        {{textarea value=question id="question"}}
+      </div>
+      <button {{action 'saveQuestion'}}>Save Question</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'questionFormShow'}}>Post New Question</button>
+{{/if}}
