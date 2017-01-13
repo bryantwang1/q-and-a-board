@@ -1,0 +1,8 @@
+<h1>Q + A Board</h1>
+<h2>Post your question and have it answered by other users.</h2>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-display question=question}}
+  {{/each}}
+</ul>
