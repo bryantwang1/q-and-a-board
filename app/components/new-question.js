@@ -8,13 +8,16 @@ export default Ember.Component.extend({
     },
     saveQuestion() {
       var params = {
-        user: this.get('user'),
-        question: this.get('question'),
+        user: this.get('user') || "anonymous",
+        question: this.get('question') || "none",
         time: new Date().toString(),
         lastEdit: "none"
       };
       this.set('addNewQuestion', false);
-      this.sendAction('saveQuestion', params);
+      if(params.question !== "none")
+      {
+        this.sendAction('saveQuestion', params);
+      }
     }
   }
 });
