@@ -10,7 +10,8 @@ export default Ember.Component.extend({
       var params = {
         user: this.get('user'),
         question: this.get('question'),
-        time: new Date().toString()
+        time: new Date().toString(),
+        lastEdit: "none"
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);

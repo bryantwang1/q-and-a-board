@@ -1,3 +1,9 @@
+<h4>{{#link-to 'index'}}Back to index{{/link-to}}</h4>
+<h2>Question</h2>
 <p>{{model.question}}</p>
-<h5>Posted by: {{model.user}} at {{model.time}}</h5>
+<p><strong>Posted by:</strong> {{model.user}} <strong>at</strong> {{model.time}}</p>
+<p><strong>Last edit at</strong> {{model.lastEdit}}</p>
+
+
+{{update-question question=model update="update"}}
 <button {{action 'delete' model}}>Delete Question</button>
