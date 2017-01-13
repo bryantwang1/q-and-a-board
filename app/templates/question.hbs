@@ -1,8 +1,16 @@
 <h2>Question</h2>
 <p>{{model.question}}</p>
-<p><strong>Posted by:</strong> {{model.user}} <strong>at</strong> {{model.time}}</p>
+<p><strong>Posted by:</strong> <em>{{model.user}}</em> <strong>at</strong> {{model.time}}</p>
 <p><strong>Last edit at</strong> {{model.lastEdit}}</p>
 
 
 {{update-question question=model update="update"}}
 <button {{action 'delete' model}}>Delete Question</button>
+{{new-answer saveAnswer="saveAnswer" question=model}}
+
+<h2>Answers</h2>
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-display answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>

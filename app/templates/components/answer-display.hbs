@@ -1,1 +1,7 @@
-{{yield}}
+<li>
+  <p>{{answer.answer}}</p>
+  <p><strong>Posted by:</strong> <em>{{answer.user}}</em> <strong>at</strong> {{answer.time}}</p>
+  <h4>+{{answer.upvotes}} || -{{answer.downvotes}}</h4>
+</li>
+
+<button {{action 'delete' answer}}>Delete Answer</button>
