@@ -1,7 +1,10 @@
 <li>
   <p>{{answer.answer}}</p>
   <p><strong>Posted by:</strong> <em>{{answer.user}}</em> <strong>at</strong> {{answer.time}}</p>
-  <h4>+{{answer.upvotes}} || -{{answer.downvotes}}</h4>
+  <h4> {{total-votes answer.upvotes answer.downvotes}} (+{{answer.upvotes}} || {{answer.downvotes}})</h4>
 </li>
+
+<button {{action 'upvote' answer}}>Upvote Answer</button>
+<button {{action 'downvote' answer}}>Downvote Answer</button>
 
 <button {{action 'delete' answer}}>Delete Answer</button>

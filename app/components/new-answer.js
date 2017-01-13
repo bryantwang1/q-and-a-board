@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         upvotes: 0,
         downvotes: 0,
         question: this.get('question')
-      }
+      };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);
     }

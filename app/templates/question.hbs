@@ -11,6 +11,6 @@
 <h2>Answers</h2>
 <ul>
   {{#each model.answers as |answer|}}
-    {{answer-display answer=answer destroyAnswer="destroyAnswer"}}
+    {{answer-display answer=answer destroyAnswer="destroyAnswer" upvote="upvote" downvote="downvote"}}
   {{/each}}
 </ul>
