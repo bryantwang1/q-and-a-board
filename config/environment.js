@@ -17,6 +17,13 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      aapiKey: "AIzaSyBTNi-Efm-EjoWx9x-2OilMDumpn8hBTJg",
+      authDomain: "q-and-a-board-in-ember.firebaseapp.com",
+      databaseURL: "https://q-and-a-board-in-ember.firebaseio.com",
+      storageBucket: "q-and-a-board-in-ember.appspot.com"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

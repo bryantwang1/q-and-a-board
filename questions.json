@@ -1,0 +1,19 @@
+{ "questions": [{
+    "user": "Lonely Cow",
+    "question": "How can I make tasty cheese?",
+    "time": "1:00 AM, 1/1/2017"
+  }],
+  "answers": [{
+    "user": "placeholder",
+    "answer": "placeholder",
+    "time": "placeholder",
+    "upvotes": 0,
+    "downvotes": 0
+  }, {
+    "user": "placeholder",
+    "answer": "placeholder",
+    "time": "placeholder",
+    "upvotes": 0,
+    "downvotes": 0
+  }]
+}
